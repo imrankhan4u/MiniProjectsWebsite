@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='temperature_converter/temperature_converter.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <input type="number" id="temperature" placeholder="Enter temperature" min="0">
+        
+        <select id="from-unit">
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+        </select>
+        
+        <select id="to-unit">
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+        </select>
+
+        <button id="convert-button" onclick="convertTemperature()">Convert</button>
+        <div id="conversion-result" class="conversion-result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='temperature_converter/temperature_converter.js') }}"></script>
+    
+</body>
+</html>

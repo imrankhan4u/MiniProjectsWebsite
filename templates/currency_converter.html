@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='currency_converter/currency_converter.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        
+        <div class="currency-inputs">
+            <input type="number" id="amount" placeholder="Amount" min="0">
+            <select id="from-currency">
+                <!-- Popular currencies will be populated here -->
+            </select>
+            <span>to</span>
+            <select id="to-currency">
+                <!-- Popular currencies will be populated here -->
+            </select>
+        </div>
+        
+        <button onclick="convertCurrency()">Convert</button>
+        
+        <div id="conversion-result" class="result-display"></div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='currency_converter/currency_converter.js') }}"></script>
+</body>
+</html>

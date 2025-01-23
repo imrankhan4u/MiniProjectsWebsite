@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 320px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .output {
+    font-size: 36px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: right;
+    color: #333;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button:active {
+    background-color: #d0d0d0;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+  }
+  
+  button.operator {
+    background-color: #f79c42; /* iPhone calculator operator color */
+    color: white;
+  }
+  
+  button.operator:hover {
+    background-color: #f39c12;
+  }
+  
+  button.operator:active {
+    background-color: #e67e22;
+  }
+  
+  button.equal {
+    background-color: #4CAF50; /* iPhone calculator equal button color */
+    color: white;
+  }
+  
+  button.equal:hover {
+    background-color: #45a049;
+  }
+  
+  button.equal:active {
+    background-color: #3c8b3f;
+  }
+  
+  button.clear {
+    background-color: #e74c3c; /* iPhone calculator clear color */
+    color: white;
+  }
+  
+  button.clear:hover {
+    background-color: #c0392b;
+  }
+  
+  button.clear:active {
+    background-color: #e74c3c;
+  }
+  
